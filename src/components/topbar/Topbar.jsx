@@ -20,7 +20,6 @@ export default function Topbar() {
         <div className="topbarLinks">
           <span className="topbarLink">Homepage</span>
           <span className="topbarLink">Timeline</span>
-          <span className="topbarLink"><a href="http://127.0.0.1:3000/profile"> Profile </a></span>
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">
