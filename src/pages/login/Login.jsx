@@ -1,4 +1,6 @@
 import "./login.css";
+import { NavLink } from "react-router-dom";
+
 
 export default function Login() {
   return (
@@ -14,10 +16,16 @@ export default function Login() {
           <div className="loginBox">
             <input placeholder="Email" className="loginInput" />
             <input placeholder="Password" className="loginInput" />
-            <button className="loginButton">Log In</button>
+            <button className="loginButton">
+            <NavLink to="/profile" style={{ textDecoration: "none", color: "white" }}>
+            Log In
+            </NavLink>
+            </button>
             <span className="loginForgot">Forgot Password?</span>
             <button className="loginRegisterButton">
+            <NavLink to="/register" style={{ textDecoration: "none", color: "white" }}>
               Create a New Account
+      </NavLink>
             </button>
           </div>
         </div>

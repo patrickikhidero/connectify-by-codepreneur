@@ -1,5 +1,7 @@
 import "./topbar.css";
 import { Search, Person, Chat, Notifications } from "@material-ui/icons";
+import { NavLink } from "react-router-dom";
+
 
 export default function Topbar() {
   return (
@@ -18,8 +20,21 @@ export default function Topbar() {
       </div>
       <div className="topbarRight">
         <div className="topbarLinks">
-          <span className="topbarLink">Homepage</span>
-          <span className="topbarLink">Timeline</span>
+        <NavLink to="/" style={{ textDecoration: "none", color: "white" }}>
+          <span className="topbarLink">Home</span>
+                </NavLink>
+      <NavLink to="/profile" style={{ textDecoration: "none", color: "white" }}>
+          <span className="topbarLink">Profile</span>
+      </NavLink>
+      <NavLink to="/register" style={{ textDecoration: "none", color: "white" }}>
+          <span className="topbarLink">Register</span>
+      </NavLink>
+      <NavLink to="/login" style={{ textDecoration: "none", color: "white" }}>
+          <span className="topbarLink">Login</span>
+      </NavLink>
+      
+      
+
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">
